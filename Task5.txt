@@ -1,0 +1,8 @@
+function average(a, b) {
+  return (a + b) / 2;
+}
+
+console.log(average(2, 1));  // Output: 1.5
+
+// The 'average' function calculates the average of two numbers by summing them and dividing by 2.
+// In this example, average(2, 1) returns 1.5

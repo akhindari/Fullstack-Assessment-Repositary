@@ -1,0 +1,10 @@
+console.log("7" > 7);      // Output: false
+console.log("2" > "21");   // Output: true (lexical comparison)
+console.log("KL" > "S");   // Output: false (lexical comparison)
+
+// In JavaScript, when comparing values using the greater than (>) operator,
+// the values are first converted to numbers if they are strings.
+// In the first comparison, "7" is not greater than 7 because "7" gets converted to the number 7.
+// In the second comparison, "2" is greater than "21" because it performs a lexicographic (lexical) comparison,
+// comparing the characters one by one from left to right.
+// In the third comparison, "KL" is not greater than "S" because "K" comes before "S" in lexicographic order.

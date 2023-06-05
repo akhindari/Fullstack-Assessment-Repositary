@@ -1,0 +1,17 @@
+// Find the longest chain of consecutive letters in a word
+
+const word = '00000111110101001111100001001';
+
+let currentChain = 0;
+let maxChain = 0;
+
+for (let i = 0; i < word.length; i++) {
+  if (word[i] === '1') {
+    currentChain++;
+    maxChain = Math.max(maxChain, currentChain);
+  } else {
+    currentChain = 0;
+  }
+}
+
+console.log("Longest chain of consecutive letters:", maxChain);

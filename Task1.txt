@@ -1,0 +1,18 @@
+
+
+// Find duplicate and same values in two arrays
+
+var fullWordList = ['1', '2', '3', '4', '5'];
+var wordsToRemove = ['1', '2', '3'];
+
+var duplicates = fullWordList.filter(value => wordsToRemove.includes(value));
+// The 'filter' function is used to create a new array with elements that satisfy the condition.
+// Here, we filter the 'fullWordList' array and keep only those elements that exist in the 'wordsToRemove' array.
+
+console.log("Duplicate values:", duplicates);
+
+var sameValues = fullWordList.filter(value => wordsToRemove.indexOf(value) !== -1);
+// The 'indexOf' function returns the first index at which a given element can be found in the array, or -1 if it is not present.
+// We filter the 'fullWordList' array and keep only those elements that have a non-negative index in the 'wordsToRemove' array.
+
+console.log("Same values:", sameValues);

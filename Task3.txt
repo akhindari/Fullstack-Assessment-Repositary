@@ -1,0 +1,13 @@
+// Understanding object references
+
+let obj1 = { "greeting": "hello" };
+let obj2 = obj1;
+
+obj1["greeting"] = "Bye";
+
+console.log(obj1);  // Output: { "greeting": "Bye" }
+console.log(obj2);  // Output: { "greeting": "Bye" }
+
+// In JavaScript, objects are assigned by reference, not by value.
+// When obj2 is assigned the value of obj1, it creates a reference to the same object in memory.
+// So, any changes made to obj1 will be reflected in obj2 and vice versa.
